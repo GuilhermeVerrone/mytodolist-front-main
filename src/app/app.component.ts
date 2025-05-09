@@ -15,7 +15,7 @@ export class AppComponent {
   mostrarErro = false;
 
   constructor(private http: HttpClient) {
-    this.apiURL = 'https://mytodolist-end-main.onrender.com';
+    this.apiURL = 'https://mytodolist-end-main.fly.dev';
     this.READ_tarefas();
   }
 

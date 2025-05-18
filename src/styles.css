@@ -6,9 +6,11 @@
 }
 
 body {
-  background: black;
+  background: white;  /* ou outra cor clara */
+  color: black;       /* para texto escuro */
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow: auto;     /* para permitir scroll */
+  font-family: var(--font-montserrat);
 }

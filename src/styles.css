@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
 :root {
   --font-montserrat: "Montserrat", sans-serif;
   --font-inter: "Inter", sans-serif;
-  --color-esmeralda: #50C878;
+  --color-esmeralda: #1B4B43;
+  --color-esmeralda-clara: #E6F2EF; /* tom claro e esbranquiçado */
 }
 
 body {
@@ -21,6 +21,8 @@ input, button, .sm-text-input, .lg-text-input {
   padding: 10px 12px;
   font-family: var(--font-inter);
   font-size: 1rem;
+  margin-bottom: 1rem; /* Espaçamento entre caixas */
+  box-sizing: border-box;
 }
 
 input::placeholder {
@@ -28,8 +30,8 @@ input::placeholder {
 }
 
 .lg-text-input, .sm-text-input {
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
+  background: var(--color-esmeralda-clara);
+  color: var(--color-esmeralda);
 }
 
 .lg-text-input:focus, .sm-text-input:focus {
@@ -37,21 +39,22 @@ input::placeholder {
 }
 
 .btn-primary, .btn, .btn-warn, .btn-save, .btn-cancel {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.15);
   color: white;
   transition: background 0.3s ease, transform 0.2s ease;
   cursor: pointer;
+  margin-bottom: 1rem; /* Mantém o espaçamento visual */
 }
 
 .btn-primary:hover, .btn:hover, .btn-warn:hover, .btn-save:hover, .btn-cancel:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.25);
   transform: scale(1.05);
 }
 
 h1 {
   font-family: var(--font-montserrat);
   font-size: 1.8rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 ul {
@@ -60,6 +63,6 @@ ul {
 }
 
 .erro-validacao {
-  color: #FFD700; /* Amarelo para destacar erros */
+  color: #FFD700; /* Amarelo ouro para destaque */
   font-weight: bold;
 }

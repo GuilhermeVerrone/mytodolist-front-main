@@ -1,6 +1,6 @@
 <div class="main">
   <h1>Guilherme Pompeo - 216361<br>Nicollas dos Santos - 216202</h1>
-
+  <div *ngIf="usuarioLogado">
   <div class="input-group">
     <input
       class="lg-text-input"
@@ -30,4 +30,11 @@
       ></app-item>
     </li>
   </ul>
+  </div>
+  <div *ngIf="!usuarioLogado">
+    <input #username placeholder="nome" class="lg-text-input" />
+    <BR>
+    <input #password placeholder="senha" class="lg-text-input" />
+    <button class="btn-primary" >Login</button>
+  </div>
 </div>

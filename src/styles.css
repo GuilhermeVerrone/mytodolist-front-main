@@ -3,14 +3,63 @@
 :root {
   --font-montserrat: "Montserrat", sans-serif;
   --font-inter: "Inter", sans-serif;
+  --color-esmeralda: #50C878;
 }
 
 body {
-  background: white;  /* ou outra cor clara */
-  color: black;       /* para texto escuro */
+  background: var(--color-esmeralda);
+  color: white;
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  overflow: auto;     /* para permitir scroll */
   font-family: var(--font-montserrat);
+}
+
+input, button, .sm-text-input, .lg-text-input {
+  border-radius: 8px;
+  border: none;
+  padding: 10px 12px;
+  font-family: var(--font-inter);
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.lg-text-input, .sm-text-input {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.lg-text-input:focus, .sm-text-input:focus {
+  outline: 2px solid white;
+}
+
+.btn-primary, .btn, .btn-warn, .btn-save, .btn-cancel {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: background 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-primary:hover, .btn:hover, .btn-warn:hover, .btn-save:hover, .btn-cancel:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+h1 {
+  font-family: var(--font-montserrat);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.erro-validacao {
+  color: #FFD700; /* Amarelo para destacar erros */
+  font-weight: bold;
 }

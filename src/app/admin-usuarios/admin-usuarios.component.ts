@@ -16,7 +16,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class AdminUsuariosComponent implements OnInit {
   @Output() fecharModal = new EventEmitter<void>();
 
-  apiURL = 'https://mytodolist-end-main-production.up.railway.app/';
+  apiURL = 'https://mytodolist-end-main-production.up.railway.app';
   usuarios: any[] = [];
   novoUsuario = { nome: '', senha: '', admin: false };
   mostrarErroCriacao: boolean = false;

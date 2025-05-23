@@ -1,68 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
   --font-montserrat: "Montserrat", sans-serif;
   --font-inter: "Inter", sans-serif;
-  --color-esmeralda: #1B4B43;
-  --color-esmeralda-clara: #E6F2EF; /* tom claro e esbranquiçado */
+  --font-lato: "Lato", sans-serif;
 }
 
 body {
-  background: var(--color-esmeralda);
-  color: white;
+  background: linear-gradient(
+    140deg,
+    rgba(232, 203, 192, 1) 14%,
+    rgba(99, 111, 164, 1) 65%
+  );
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  font-family: var(--font-montserrat);
-}
-
-input, button, .sm-text-input, .lg-text-input {
-  border-radius: 8px;
-  border: none;
-  padding: 10px 12px;
-  font-family: var(--font-inter);
-  font-size: 1rem;
-  margin-bottom: 1rem; /* Espaçamento entre caixas */
-  box-sizing: border-box;
-}
-
-input::placeholder {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.lg-text-input, .sm-text-input {
-  background: var(--color-esmeralda-clara);
-  color: var(--color-esmeralda);
-}
-
-.lg-text-input:focus, .sm-text-input:focus {
-  outline: 2px solid white;
-}
-
-.btn-primary, .btn, .btn-warn, .btn-save, .btn-cancel {
-  background: rgba(255, 255, 255, 0.15);
-  color: white;
-  transition: background 0.3s ease, transform 0.2s ease;
-  cursor: pointer;
-  margin-bottom: 1rem; /* Mantém o espaçamento visual */
-}
-
-.btn-primary:hover, .btn:hover, .btn-warn:hover, .btn-save:hover, .btn-cancel:hover {
-  background: rgba(255, 255, 255, 0.25);
-  transform: scale(1.05);
-}
-
-h1 {
-  font-family: var(--font-montserrat);
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-.erro-validacao {
-  color: #FFD700; /* Amarelo ouro para destaque */
-  font-weight: bold;
+  overflow: hidden;
 }

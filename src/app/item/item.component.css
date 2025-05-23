@@ -14,8 +14,9 @@
 }
 
 .item:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease-in-out;
 }
 
 .item-item input[type="checkbox"] {
@@ -52,8 +53,6 @@
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   transition: all 0.2s ease-in-out;
-  background: rgba(255, 255, 255, 0.2);
-
 
   i {
     font-size: 1.25rem;
@@ -141,6 +140,13 @@
   background-color: #1d4ed8;
   transition: all 0.2s ease-in-out;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .erro-validacao {
   text-align: center;
   color: red;

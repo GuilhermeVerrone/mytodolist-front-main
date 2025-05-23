@@ -38,7 +38,7 @@
   <div *ngIf="!usuarioLogado" class="login">
     <div class="input-container">
       <div class="user-container">
-        <i class="ri-user-line"></i>
+        <span>Usuário</span>
       </div>
       <input #username placeholder="Nome" class="lg-text-input with-icon" />
     </div>
@@ -46,7 +46,7 @@
     <div class="input-container">
       <div class="password-wrapper">
         <div class="password-icon">
-          <i class="ri-lock-line"></i>
+          <span>Senha</span>
         </div>
 
         <input
@@ -62,7 +62,7 @@
           class="toggle-password"
           (click)="mostrarSenha = !mostrarSenha"
         >
-          <i [class]="mostrarSenha ? 'ri-eye-line' : 'ri-eye-off-line'"></i>
+          {{ mostrarSenha ? 'Ocultar' : 'Mostrar' }}
         </button>
       </div>
     </div>
@@ -77,12 +77,13 @@
       ERRO: Usuário não encontrado ou senha incorreta.
     </span>
   </div>
+
   <div class="user-bar">
     <button *ngIf="adminLogado" class="btn-panel" (click)="abrirPainelAdmin()">
-      <i class="ri-user-settings-line"></i>
+      Painel
     </button>
     <button *ngIf="usuarioLogado" class="btn-logout" (click)="logout()">
-      <i class="ri-logout-box-line"></i>
+      Sair
     </button>
   </div>
 </div>

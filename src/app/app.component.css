@@ -67,7 +67,7 @@
   background-color: #374151;
   border: none;
   cursor: pointer;
-  padding: 0.5rem;
+  padding: 1.2rem;
   border-radius: 8px;
   transition: all 0.3s ease;
   display: flex;
@@ -91,12 +91,13 @@
   background: red;
   border: none;
   cursor: pointer;
-  padding: 0.5rem;
+  padding: 1.2rem;
   border-radius: 8px;
   transition: all 0.3s ease;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 .btn-logout:hover {
